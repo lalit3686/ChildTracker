@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_start_tracking_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="buttonOnClick"
+            android:text="@string/start" />
+
+        <Button
+            android:id="@+id/button_show_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="buttonOnClick"
+            android:text="@string/show_map" />
+
+        <Button
+            android:id="@+id/button_show_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="buttonOnClick"
+            android:text="@string/show_location" />
+
+        <Button
+            android:id="@+id/button_stop_tracking_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="buttonOnClick"
+            android:text="@string/stop" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_calls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_incoming_calls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="buttonOnClick"
+            android:text="@string/incoming_calls" />
+
+        <Button
+            android:id="@+id/button_outgoing_calls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="buttonOnClick"
+            android:text="@string/outgoing_calls" />
+
+        <Button
+            android:id="@+id/button_incoming_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="buttonOnClick"
+            android:text="@string/incoming_sms" />
+
+        <Button
+            android:id="@+id/button_outgoing_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:onClick="buttonOnClick"
+            android:text="@string/outgoing_sms" />
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear_layout_calls" />
+</RelativeLayout>

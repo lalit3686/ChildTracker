@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ChildTracker</string>
+    <string name="locationTxt">Continuous Location Update</string>
+    <string name="pref_settings">PREF_SETTINGS</string>
+    <string name="pref_boolean_telephone_manager">PREF_BOOLEAN_TELEPHONE_MANAGER</string>
+    <string name="show_map">Show Map</string>
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
+    <string name="incoming_calls">Incoming Calls</string>
+    <string name="outgoing_calls">Outgoing Calls</string>
+    <string name="incoming_sms">Incoming Sms</string>
+    <string name="outgoing_sms">Outgoing Sms</string>
+    <string name="show_location">Show Location</string>
+</resources>
